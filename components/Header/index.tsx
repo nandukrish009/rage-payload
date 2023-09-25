@@ -6,7 +6,7 @@ import { Gutter } from '../Gutter';
 import { MenuIcon } from '../icons/Menu';
 import { CMSLink } from '../Link';
 import { Logo } from '../Logo';
-import { MobileMenuModal, slug as menuModalSlug } from './MobileMenuModal';
+// import { MobileMenuModal, slug as menuModalSlug } from './MobileMenuModal';
 
 import classes from './index.module.scss';
 
@@ -23,9 +23,9 @@ export const HeaderBar: React.FC<HeaderBarProps> = ({ children }) => {
 
         {children}
 
-        <ModalToggler slug={menuModalSlug} className={classes.mobileMenuToggler}>
+        {/* <ModalToggler slug={menuModalSlug} className={classes.mobileMenuToggler}>
           <MenuIcon />
-        </ModalToggler>
+        </ModalToggler> */}
       </Gutter>
     </header>
   )
@@ -46,7 +46,7 @@ export const Header: React.FC<{ mainMenu: MainMenu }> = ({ mainMenu }) => {
         </nav>
       </HeaderBar>
 
-      <MobileMenuModal navItems={navItems} />
+      {/* <MobileMenuModal navItems={navItems} /> */}
     </>
   )
 }

@@ -9,7 +9,7 @@ const SiteLayout = async ({ children }: { children: React.ReactNode }) => {
   });
 
   return (
-    <Layout mainMenu={mainMenu} children={undefined}>
+    <Layout mainMenu={mainMenu}>
       <div className="container">{children}</div>
 
     </Layout>

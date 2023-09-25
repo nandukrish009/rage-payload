@@ -18,12 +18,12 @@ const Page = async ({ params: { slug } }: { params: { slug: string } }) => {
   });
 
   const page = pages.docs[0];
-
+  // console.log('page',page);
   if (!page) return notFound()
 
   return (
     <React.Fragment>
-      <AdminBar adminBarProps={{ collection: 'pages', id: page.id }} />
+      {/* <AdminBar adminBarProps={{ collection: 'pages', id: page.id }} /> */}
       <Hero {...page.hero} />
       <Blocks blocks={page.layout} />
     </React.Fragment>
@@ -32,7 +32,6 @@ const Page = async ({ params: { slug } }: { params: { slug: string } }) => {
 
 export async function generateStaticParams() {
   const payload = await getPayloadClient();
-
   const pages = await payload.find({
     collection: 'pages',
     limit: 0,

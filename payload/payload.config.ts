@@ -3,6 +3,7 @@ import path from 'path';
 import { Users } from './collections/Users';
 import { Pages } from './collections/Pages';
 import { MainMenu } from './globals/MainMenu';
+import { Questionnaire } from './collections/Questionnaire';
 import { cloudStorage } from '@payloadcms/plugin-cloud-storage';
 import { s3Adapter } from '@payloadcms/plugin-cloud-storage/s3';
 import { Media } from './collections/Media';
@@ -26,6 +27,8 @@ export default buildConfig({
     Pages,
     Users,
     Media,
+    Questionnaire,
+
     {
       slug: 'examples',
       fields: [

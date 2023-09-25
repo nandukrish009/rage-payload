@@ -2,6 +2,9 @@ import { CollectionConfig } from "payload/types";
 
 export const Questionnaire: CollectionConfig = {
   slug: "questionnaire",
+  access:{
+    read: () => true,
+  },
   fields: [
     {
       name: "questions", // required

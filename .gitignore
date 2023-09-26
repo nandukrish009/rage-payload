@@ -169,3 +169,5 @@ dist
 
 build
 public/admin
+
+.vercel.json

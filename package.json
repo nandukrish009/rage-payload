@@ -3,6 +3,7 @@
   "description": "Demo of Payload deployed as Vercel functions within NextJS",
   "version": "1.0.0",
   "license": "MIT",
+  "proxy": "https://main.d2pbkid6j17mz2.amplifyapp.com",
   "scripts": {
     "dev": "next dev",
     "start": "next start",
